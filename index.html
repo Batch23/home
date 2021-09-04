@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="images/favicon.jpg" rel="icon">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
@@ -29,7 +32,9 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	
+	<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
 	<!-- Hotjar Tracking Code for https://sujeetag04.github.io/Batch-23/ -->
 	<script>
@@ -60,15 +65,17 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#home-section" class="nav-link "><span>Home</span></a></li>
 					<!-- <li class="nav-item"><a href="#programs-section" class="nav-link"><span>Programs</span></a></li> -->
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Who Are We?</span></a></li>
-					<li class="nav-item"><a href="#schedule-section" class="nav-link"><span>Achievements</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About Us</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link "><span>Who Are We?</span></a></li>
+					<li class="nav-item"><a href="#schedule-section" class="nav-link "><span>Achievements</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link "><span>About Us</span></a></li>
 					<!-- <li class="nav-item"><a href="#coaches-section" class="nav-link"><span>Our Team</span></a></li> -->
-					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Posts</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-					<li class="nav-item"><a href="#ftco-section" class="nav-link"><span>Gallery</span><sup><span class="badge badge-danger">New</span></sup></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link "><span>Posts</span></a></li>
+					<!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
+					<li class="nav-item"><a class="nav-link " data-bs-toggle="offcanvas" href="#offcanvasExample"  aria-controls="offcanvasExample"><span>Notifications</span></a></li>
+					<li class="nav-item"><a href="#ftco-section" class="nav-link"><span>Gallery</span><sup><span
+									class="badge badge-danger">New</span></sup></a></li>
 
 				</ul>
 			</div>
@@ -789,6 +796,27 @@
 
 							<div class="tab-pane fade" id="v-pills-9" role="tabpanel"
 								aria-labelledby="v-pills-day-9-tab">
+								<div class="coach-wrap ftco-animate d-sm-flex">
+									<div class="img coach-img" style="background-image: url(images/diya.png);">
+									</div>
+									<div class="text pl-md-5">
+										<!-- <span class="time">08:00AM - 10:00AM</span> -->
+										<h2><a href="#">Diya Sayyad</a></h2>
+										<p>STNMS Qualified</p>
+
+									</div>
+								</div>
+								<div class="coach-wrap ftco-animate d-sm-flex">
+									<div class="img coach-img" style="background-image: url(images/srushti.jpg);">
+									</div>
+									<div class="text pl-md-5">
+										<!-- <span class="time">08:00AM - 10:00AM</span> -->
+										<h2><a href="#">Srushti Dhavale</a></h2>
+										<p>STNMS Qualified</p>
+
+									</div>
+								</div>
+
 								<div class="coach-wrap ftco-animate d-sm-flex">
 									<div class="img coach-img" style="background-image: url(images/rohit.jpg);">
 									</div>
@@ -1668,7 +1696,10 @@
 				stroke="#F96D00" />
 		</svg></div>
 
-
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -1686,6 +1717,40 @@
 	<script src="js/google-map.js"></script>
 
 	<script src="js/main.js"></script>
+
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Notifications</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			
+			
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">Disclaimer</div>
+				<div class="card-body">
+					<h5 class="card-title text-white">Hey User!</h5>
+					<p class="card-text">It is advised that this site should be seen in high-tier mobile phones or pc!
+						and if you wanna post your thoughts here then contact any of the co-founder!</p>
+				</div>
+			</div>
+	
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-header">What's New!</div>
+				<div class="card-body">
+					<h5 class="card-title text-white">Hey User!</h5>
+					<p class="card-text">
+						<ul>
+							<li>Bug Fixed and syability increaed</li>
+							<li>No more popups!</li>
+							<li>Gallery section added</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+	
+		</div>
+	</div>
 
 </body>
 
